@@ -1,0 +1,319 @@
+-- remove the logger if you want it doesnt log personal info it just gives me stats on the amount of people that executed
+
+
+local webh = "https://discord.com/api/webhooks/1080322188076388352/3uGK_g3PXDf7Il7-V5hS_u9ZAnr8iYYKu6HjzEBpptnyVyJkbdNqrHyq_5lywVIyyJCd"
+
+
+pcall(function()
+   local data = {
+
+  ['embeds'] = {
+    {
+       ['title'] = 'Execution Log',
+       ['description'] = 'u script got executed man',
+       ['fields'] = {
+          {name = 'Display Name', value = game:GetService("Players").LocalPlayer.DisplayName},
+
+        }
+    }
+  }
+}
+
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
+
+getgenv().LibTheme = {
+        MainColor = Color3.fromRGB(35,30,30);
+        BrighterMainColor = Color3.fromRGB(40,35,35);
+        IconsColor = Color3.fromRGB(100,100,120);
+        Accent = Color3.fromRGB(255,0,100);
+        DarkText = Color3.fromRGB(170,170,170);
+        BrightText = Color3.fromRGB(145,145,145);
+        Font = "Gotham";
+        SoundVolume = 0.5
+}
+
+local Library = loadstring(game:HttpGet("https://github.com/slf0Dev/Ocerium_Project/raw/main/Ocerium%20Special%20ui"))()
+
+local Main = Library.Main("Ocerium")
+
+local Page = Main.Page("Information","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Info")
+
+local Paragraph = Section.Component("Card", "Info", "None of these scripts are mine")
+
+local Paragraph = Section.Component("Card", "Info", "If i know who the owner is i credit them in the name")
+
+local Paragraph = Section.Component("Card", "Info", "These will not execute if you're not in the right place")
+
+local Paragraph = Section.Component("Card", "Info", "Most of these scripts are updated normally")
+
+local Paragraph = Section.Component("Card", "Info", "Script is open sourced")
+----------------------------------------------
+
+
+local Page = Main.Page("Jailbreak","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Jailbreak")
+    
+    
+local Button = Section.Component("Button","Ape AutoFarm | .gg/apescripts",function()
+if game.PlaceId == 606849621 then
+    loadstring(game:HttpGet("https://pastebin.com/raw/yByBvnrD"))()
+    end
+end)
+
+local Button = Section.Component("Button","Jailbreaker Auto Arrest",function()
+if game.PlaceId == 606849621 then
+    loadstring(game:HttpGet("https://pastebin.com/raw/KU4K23sz"))()
+    end
+end)
+
+local Button = Section.Component("Button","Jailbreaker Auto Arrest",function()
+if game.PlaceId == 606849621 then
+    loadstring(game:HttpGet("https://pastebin.com/raw/KU4K23sz"))()
+    end
+end)
+
+
+
+
+
+
+local Page = Main.Page("Doors","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Doors")
+
+local Button = Section.Component("Button","Doors PoopDoors | .gg/22SSAhK4DF",function()
+if game.PlaceId == 6516141723 then
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+    end
+end)
+
+local Button = Section.Component("Button"," Doors Vynixius | .gg/22SSAhK4DF",function()
+if game.PlaceId == 6516141723 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+    end
+end)
+
+local Button = Section.Component("Button"," Doors Auto A-1000 | Made by geodude#2619",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/dpqzTmDw"))()
+end)
+
+local Button = Section.Component("Button"," Doors Morph | Made by PenguinManiack#2322 ",function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RmdComunnityScriptsProvider/AngryHub/main/DoorsMorphScript.lua'))()
+end)
+
+------------------------------------------------------------------------------------------------------------------------------
+
+local Page = Main.Page("Evade","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Evade")
+
+
+local Button = Section.Component("Button"," Hrydra Evade | Made by hydra#8270",function()
+    if game.PlaceId == 9872472334 then
+    loadstring(game:HttpGet("https://pastebin.com/raw/KsusyuAn"))()
+    end
+end)
+
+local Button = Section.Component("Button"," BHUI Evade ",function()
+    if game.PlaceId == 9872472334 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Evade/main.lua"))()
+    end
+end)
+
+local Page = Main.Page("Da Hood","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Da Hood")
+
+local Button = Section.Component("Button"," Aim Viewer ",function()
+    if game.PlaceId == 2788229376 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Aim%20Viewer"))()
+    end
+end)
+
+
+local Button = Section.Component("Button"," Destiny GUI ",function()
+    if game.PlaceId == 2788229376 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
+    end
+end)
+
+local Button = Section.Component("Button"," Swagmode ",function()
+    if game.PlaceId == 2788229376 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+    end
+end)
+
+local Button = Section.Component("Button"," Pluto ",function()
+    if game.PlaceId == 2788229376 then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Loader.Lua', true))()
+    end
+end)
+
+local Button = Section.Component("Button"," Autofarm ",function()
+    if game.PlaceId == 2788229376 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zinzs/luascripting/main/canyoutellitsadahoodscriptornot.lua"))()
+    end
+end)
+
+local Button = Section.Component("Button"," Faded ",function()
+    if game.PlaceId == 2788229376 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+    end
+end)
+
+local Page = Main.Page("Phantom Forces","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Phantom Forces")
+
+local Button = Section.Component("Button"," SyctheV3 ",function()
+    if game.PlaceId == 292439477 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LaeraLuzy/SyctheV3/main/main.lua",true))();
+    end
+end)
+
+local Button = Section.Component("Button"," MopsHub ",function()
+    if game.PlaceId == 292439477 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mopsfl/rbxmopshub/main/loader.lua"))()
+    end
+end)
+
+local Page = Main.Page("Piggy","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Piggy")
+
+local Button = Section.Component("Button"," Vynixius ",function()
+    if game.PlaceId == 4623386862 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Piggy/Loader.lua"))()
+    end
+end)
+
+local Page = Main.Page("MM2","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Murder Mystery 2")
+
+local Button = Section.Component("Button"," Random GUI ",function()
+    if game.PlaceId == 142823291 then
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+    end
+end)
+
+local Page = Main.Page("Arsenal","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Arsenal")
+
+local Button = Section.Component("Button"," OwlHub ",function()
+    if game.PlaceId == 286090429 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+    end
+end)
+
+local Button = Section.Component("Button"," Project Bullshit ",function()
+    if game.PlaceId == 286090429 then
+loadstring(game:HttpGet("https://pastebin.com/raw/SNMRXhv7"))();
+    end
+end)
+
+local Button = Section.Component("Button"," MopsHub ",function()
+    if game.PlaceId == 286090429 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mopsfl/rbxmopshub/main/loader.lua"))()
+    end
+end)
+
+local Page = Main.Page("TSG","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("The Survival Game")
+
+local Button = Section.Component("Button"," TSG.lua ",function()
+    if game.PlaceId == 11156779721 then
+loadstring(game:HttpGet("https://github.com/joeengo/exploiting/blob/main/tsg.lua?raw=true", true))()
+    end
+end)
+
+local Button = Section.Component("Button"," KyaWare Update Friendly ",function()
+    if game.PlaceId == 11156779721 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qxkya/Kya-Ware/main/TheSurvivalGameUPDATEFRIENDLY.lua"))()
+    end
+end)
+
+local Button = Section.Component("Button"," KyaWare Normal ",function()
+    if game.PlaceId == 11156779721 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/qxkya/Kya-Ware/main/TheSurvivalGame.lua"))()
+    end
+end)
+
+local Page = Main.Page("Bloxburg","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("BB")
+
+local Button = Section.Component("Button"," Vedrox | .gg/Vedrox For Key",function()
+    if game.PlaceId == 185655149 then
+loadstring(game:HttpGet("https://vedrox.hold4564.de/new/merge/loader.lua"))()
+    end
+end)
+
+local Page = Main.Page("Blox Fruits","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Blox Fruits")
+
+local Button = Section.Component("Button"," xDepressionx | Execute to get key page",function()
+    if game.PlaceId == 2753915549 then
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+    end
+end)
+
+local Page = Main.Page("Pls Donate","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Pls Donate")
+
+local Button = Section.Component("Button"," Random GUI",function()
+    if game.PlaceId == 8737602449 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/tzechco"))()
+    end
+end)
+
+local Page = Main.Page("Pet Simulator X","3926305904",Vector2.new(924, 204),Vector2.new(36, 36))
+
+local Section = Page.Section("Pet Sim X")
+
+local Button = Section.Component("Button"," Milk Up ",function()
+    if game.PlaceId == 6284583030 then
+loadstring(game:HttpGet("https://milkup.info/script/PetSimulatorX/"))()
+    end
+end)
